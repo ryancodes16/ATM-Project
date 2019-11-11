@@ -44,6 +44,7 @@ public class ATM {
     public void withdraw(int amount){
         if(adjustBills(amount)){
             this.money -= amount;
+            System.out.println("$" + amount + " withdrawn.");
         } else {
             System.out.println("Sorry, the transaction cannot be made.");
         }
