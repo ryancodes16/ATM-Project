@@ -57,8 +57,12 @@ public class ATM {
      * 
      */
     public void addFivers(int num){
-        this.money += (num * 5);
-        this.fiverNum+=num;
+        if(num > 0){
+            this.money += (num * 5);
+            this.fiverNum+=num;
+        } else {
+            System.out.println("Re-enter number properly");
+        }
     }
 
     /*
@@ -68,8 +72,12 @@ public class ATM {
      * 
      */
     public void addTwenters(int num){
-        this.money += (num * 20);
-        this.twentNum += num;
+        if(num > 0){
+            this.money += (num * 20);
+            this.twentNum += num;
+        } else {
+            System.out.println("Re-enter number properly");
+        }
     }
 
     /*
